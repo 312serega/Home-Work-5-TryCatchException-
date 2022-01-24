@@ -13,7 +13,6 @@ void main() {
   try {
     check(login, password, confirmPassword);
     print('Все норм');
-    print(user);
   } on WrongLoginException catch (e) {
     print(e);
   } on WrongPasswordException catch (e) {
